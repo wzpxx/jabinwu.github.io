@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>vue中实现路由有两种方式：</h1>
+    <ul>
+        <li>监听hash值变化的方式：监听hashchange事件，获取url改变后的hash值，根据hash值匹配路由，修改dom内容。</li>
+        <li>
+            <h1>h5的history：</h1>
+            <ol>
+                <li>
+                        浏览器回退和history相关回退和前进方法会触发popstate事件，在事件中根据pathname的改变，来匹配路由，修改dom内容
+                </li>
+                <li>
+                        点击调用pushState给浏览器添加历史记录或者调用replaceState替换当前历史记录，再根据pathname来匹配路由，修改dom内容
+                </li>
+                <li>
+                        刷新页面，跳到后端路由，服务器会判断为404，找不到对应路由，让服务器端进行重定向，将404重定向到单页应用的入口index.html
+                </li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
